@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta for MorganCode</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">ECC Recruiting Team</h1>
+            <p id="description" class="description text-center">For true followers of the ECC clan only</p>
+        </header>
+    </div>
+    <form id="survey-form">
+        <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" name="name" class="form-control" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+            <label id="number-label" for="number">Number</label>
+            <input type="number" name="age" id="number" min="18" max="30" class="form-control" placeholder="Age">
+        </div>
+        <div class="form-group">
+            <p>Which option best describes your role?</p>
+            <select name="role" class="form-control" id="dropdown" required>
+                <option disabled selected value>Select role</option>
+                <option value="homosexual">Homosexual</option>
+                <option value="funny">Funny</option>
+                <option value="morgan-fan">Morgan Fan</option>
+                <option value="planner">Planner</option>
+                <option value="what-jopito">What a Jopito</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>Would you recommend ECC to a friend?</p>
+            <label>
+                <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked>
+                Definitely
+            </label>
+            <label>
+                <input name="user-recommend" value="maybe" type="radio" class="input-radio">
+                Maybe
+            </label>
+            <label>
+                <input name="user-recommend" value="not-sure" type="radio" class="input-radio">
+                Not sure
+            </label>
+        </div>
+        <div class="form-group">
+            <p>Any comments or suggestions?</p>
+            <textarea name="comment" id="comments" class="input-textarea" placeholder="Enter your comment here..."></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
